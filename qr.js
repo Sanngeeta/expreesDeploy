@@ -44,3 +44,14 @@ qr.toDataURL(strData, function (err, code) {
 
 // teamLeader-at-800226134398
 // QI4oHReUvLOVFaoAqD3+SNy+PnvpoVwAeKoeS9pWauE=
+
+
+//sudo yum erase codedeploy-agent
+// cd /opt
+// ls
+// sudo rm -r codedeploy-agent/
+// cd
+//ls
+// sudo rm -r express-app/
+// sudo ./install auto
+//push the code again 
