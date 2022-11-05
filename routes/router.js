@@ -31,10 +31,10 @@ const multerS3 = require('multer-s3');
 
 
 let s3 = new S3Client({
-  region: "ap-northeast-1",
+  region: "us-east-1",
   credentials: {
-    accessKeyId: 'AKIAXRHJPJPTWZZQETF6',
-    secretAccessKey: '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',
+    accessKeyId: 'AKIA3UUJRZF7AW7DBP3X',
+    secretAccessKey: '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',
   },
   sslEnabled: false,
   s3ForcePathStyle: true,
@@ -48,7 +48,7 @@ const upload = multer({
   storage: multerS3({
     bucket: "s3-express-app-bucket",
     s3: s3,
-    acl: "public-read", //access publicly /Access control for the file	
+    // acl: "public-read", //access publicly /Access control for the file	
     key: (req, file, cb) => {
       cb(null, Date.now() + file.originalname);
     },
