@@ -12,4 +12,4 @@ if [ -d "$DIR" ]; then
 else
   echo "Creating ${DIR} directory"
   mkdir ${DIR}
-fi
+fi 
