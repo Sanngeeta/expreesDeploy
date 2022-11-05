@@ -47,12 +47,10 @@ profileSignup=(req,res)=>{
            return res.json({message:err})
         }
         const newUsers={
-
+            name:req.body.name,
             phoneNumbre:req.body.phoneNumbre,
             email:req.body.email,
             password:haspass,
-            role:req.body.role,
-            status:req.body.status,
         }
         const insertData=profile.insertMany([newUsers])
         .then((insertData)=>{

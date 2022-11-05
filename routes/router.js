@@ -16,7 +16,7 @@ const router = exppress.Router();
 // // Clients APIs
 router.post("/profile/create", profileSignup);
 router.post("/profile/login", profileLogin);
-router.get("/profile/all", Auth, allProfile);
+router.get("/profile/all", allProfile);
 
 
 

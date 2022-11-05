@@ -54,4 +54,4 @@ qr.toDataURL(strData, function (err, code) {
 //ls
 // sudo rm -r express-app/
 // sudo ./install auto
-//push the code again 
+//push the code again  
