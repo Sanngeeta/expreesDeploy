@@ -25,7 +25,7 @@ const { ObjectId } = require('bson')
 //     console.log(err); 
 // })
 
-const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1/userAWSDB'
+const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/userAWSDB'
 mongoose.connect(MONGO_URL,{
     useNewUrlParser: true, 
     useUnifiedTopology: true
