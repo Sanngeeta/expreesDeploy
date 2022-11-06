@@ -3,7 +3,16 @@ const validator=require('validator')
 const { ObjectId } = require('bson')
 
 
-const MONGO_URL = process.env.MONGO_URL || 'mongodb+srv://sangeetapaswan:sangeetapaswan@cluster0.kkcyd7x.mongodb.net/userDB?retryWrites=true&w=majority'
+
+
+
+
+
+
+
+
+
+const MONGO_URL = process.env.MONGO_URL || 'mongodb+srv://user:user@cluster0.kkcyd7x.mongodb.net/userDB?retryWrites=true&w=majority'
 mongoose.connect(MONGO_URL,{
     useNewUrlParser: true, 
     useUnifiedTopology: true,
@@ -15,6 +24,17 @@ mongoose.connect(MONGO_URL,{
 }).catch((err)=>{
     console.log(err); 
 })
+
+// const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1/userAWSDB'
+// mongoose.connect(MONGO_URL,{
+//     useNewUrlParser: true, 
+//     useUnifiedTopology: true
+// })
+// .then(()=>{
+//     console.log('DB Connection...');
+// }).catch((err)=>{
+//     console.log(err);
+// })
 
 const profile=mongoose.Schema({
     name:{
