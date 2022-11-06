@@ -12,29 +12,29 @@ const { ObjectId } = require('bson')
 
 
 
-const MONGO_URL = process.env.MONGO_URL || 'mongodb+srv://user:user@cluster0.kkcyd7x.mongodb.net/userDB?retryWrites=true&w=majority'
-mongoose.connect(MONGO_URL,{
-    useNewUrlParser: true, 
-    useUnifiedTopology: true,
-    // useCreateIndex:true,
-    // useFindAndModify:false
-})
-.then(()=>{
-    console.log('DB Connection...');
-}).catch((err)=>{
-    console.log(err); 
-})
-
-// const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1/userAWSDB'
+// const MONGO_URL = process.env.MONGO_URL || 'mongodb+srv://user:user@cluster0.kkcyd7x.mongodb.net/userDB?retryWrites=true&w=majority'
 // mongoose.connect(MONGO_URL,{
 //     useNewUrlParser: true, 
-//     useUnifiedTopology: true
+//     useUnifiedTopology: true,
+//     // useCreateIndex:true,
+//     // useFindAndModify:false
 // })
 // .then(()=>{
 //     console.log('DB Connection...');
 // }).catch((err)=>{
-//     console.log(err);
+//     console.log(err); 
 // })
+
+const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1/userAWSDB'
+mongoose.connect(MONGO_URL,{
+    useNewUrlParser: true, 
+    useUnifiedTopology: true
+})
+.then(()=>{
+    console.log('DB Connection...');
+}).catch((err)=>{
+    console.log(err);
+})
 
 const profile=mongoose.Schema({
     name:{
@@ -83,3 +83,9 @@ const Profile= mongoose.model('profile',profile)
 
 
 module.exports=Profile
+
+
+// [mongodb-org-4.0]
+// name=MongoDB Repository baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/4.0/x86_64/ gpgcheck=1 enabled=1 gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc 
+// sudo rm -rf /etc/yum.repos.d/mongod*
+// sudo yum clean all
