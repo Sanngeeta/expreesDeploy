@@ -4,7 +4,7 @@ const { ObjectId } = require('bson')
 
 
 
-const MONGO_URL ="mongodb+srv://user:user@cluster0.fg7zdln.mongodb.net/userDB?retryWrites=true&w=majority" //|| 'mongodb+srv://user:user@cluster0.kkcyd7x.mongodb.net/userDB?retryWrites=true&w=majority'
+const MONGO_URL = process.env.MONGO_URL || 'mongodb+srv://user:user@cluster0.kkcyd7x.mongodb.net/userDB?retryWrites=true&w=majority'
 mongoose.connect(MONGO_URL,{
     useNewUrlParser: true, 
     useUnifiedTopology: true,
