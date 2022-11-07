@@ -4,29 +4,29 @@ const { ObjectId } = require('bson')
 
 
 
-// const MONGO_URL = process.env.MONGO_URL || 'mongodb+srv://user:user@cluster0.kkcyd7x.mongodb.net/userDB?retryWrites=true&w=majority'
-// mongoose.connect(MONGO_URL,{
-//     useNewUrlParser: true, 
-//     useUnifiedTopology: true,
-//     // useCreateIndex:true,
-//     // useFindAndModify:false
-// })
-// .then(()=>{
-//     console.log('DB Connection...');
-// }).catch((err)=>{
-//     console.log(err); 
-// })
-
-const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/userAWSDB'
+const MONGO_URL = process.env.MONGO_URL || 'mongodb+srv://user:user@cluster0.kkcyd7x.mongodb.net/userDB?retryWrites=true&w=majority'
 mongoose.connect(MONGO_URL,{
     useNewUrlParser: true, 
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    // useCreateIndex:true,
+    // useFindAndModify:false
 })
 .then(()=>{
     console.log('DB Connection...');
 }).catch((err)=>{
-    console.log(err);
+    console.log(err); 
 })
+
+// const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/userAWSDB'
+// mongoose.connect(MONGO_URL,{
+//     useNewUrlParser: true, 
+//     useUnifiedTopology: true
+// })
+// .then(()=>{
+//     console.log('DB Connection...');
+// }).catch((err)=>{
+//     console.log(err);
+// })
  
 const profile=mongoose.Schema({
     name:{
