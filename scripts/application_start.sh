@@ -16,3 +16,4 @@ npm install
 
 #start our node app in the background
 node app.js > app.out.log 2> app.err.log < /dev/null & 
+pm2 restart nodejs-express-app >> /home/ec2-user/express-app/deploy.log
