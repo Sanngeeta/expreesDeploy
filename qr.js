@@ -63,3 +63,15 @@ qr.toDataURL(strData, function (err, code) {
 // gpgcheck=1
 // enabled=1
 // gpgkey=https://www.mongodb.org/static/pgp/server-5.0.asc
+
+
+
+// AKIA3UUJRZF7GE4G5WGN
+// K21P48KRz6Dd8KRVY/w2mMWZ1wCvKrj+QwETq1jV
+
+
+// git push https://git-codecommit.us-east-2.amazonaws.com/v1/repos/deployExpreesApiRepo --all
+
+
+//AKIA3UUJRZF7OBIOYL7Z
+//oqpYUmB3U4ssoQEC0PRQeMC5U2LYfzgGpcSBmwLq

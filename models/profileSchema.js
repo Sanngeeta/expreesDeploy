@@ -81,3 +81,9 @@ module.exports=Profile
 // name=MongoDB Repository baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/4.0/x86_64/ gpgcheck=1 enabled=1 gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc 
 // sudo rm -rf /etc/yum.repos.d/mongod*
 // sudo yum clean all
+
+// https://800226134398.signin.aws.amazon.com/console
+
+
+// git push https://git-codecommit.us-east-2.amazonaws.com/v1/repos/deployExpreesApiRepo --all
+
