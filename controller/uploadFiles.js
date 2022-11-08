@@ -15,7 +15,7 @@ const s3 = new aws.S3()
 
 exports.getAllListFiles = async (req, res) => {
     console.log('runnniiiii');
-    files = await s3.listObjectsV2({ Bucket: "s3-expressapi-app-bucket" }).promise();
+    files = await s3.listObjectsV2({ Bucket: "expressnode-app-bucket" }).promise();
     file = files.Contents.map(item => item.Key)
     res.send(file);
 };
@@ -25,7 +25,7 @@ exports.getAllListFiles = async (req, res) => {
 
 exports.downloadFile = async (req, res) => {
     console.log(req.params.filename);
-    downloadedFile = await s3.getObject({ Bucket: "s3-expressapi-app-bucket", Key: req.params.filename }).promise();
+    downloadedFile = await s3.getObject({ Bucket: "expressnode-app-bucket", Key: req.params.filename }).promise();
     res.send(downloadedFile.Body);
 };
 
@@ -35,7 +35,7 @@ exports.downloadFile = async (req, res) => {
 exports.deleteFile = async (req, res) => {
     const filename = req.params.filename
     delFile = await s3.deleteObject({
-        Bucket: "s3-expressapi-app-bucket",
+        Bucket: "expressnode-app-bucket",
         Key: filename,
     }).promise();
 

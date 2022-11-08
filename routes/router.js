@@ -47,7 +47,7 @@ const upload = multer({
 
 
   storage: multerS3({
-    bucket: "s3-expressapi-app-bucket",
+    bucket: "expressnode-app-bucket",
     s3: s3,
     // acl: "public-read", //access publicly /Access control for the file	
     key: (req, file, cb) => {
