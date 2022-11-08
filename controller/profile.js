@@ -12,8 +12,7 @@ allProfile=async(req,res)=>{
         const profiles=await profile.find({})
         res.send({
             status:200,
-            message:'All Category!',
-            profile:profiles
+            profiles:profiles
         })
     }catch(err){
         res.send({        
