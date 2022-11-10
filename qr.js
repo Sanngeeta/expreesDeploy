@@ -26,7 +26,7 @@ qr.toDataURL(strData, function (err, code) {
 
 
 
-//key////
+//key//
 // team+1-at-518033198055
 // KXAYsRZ6jfHNdl5fPmPUY9xt68wpeUMajLAwqSGAvgw=
 
