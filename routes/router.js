@@ -74,7 +74,7 @@ router.post("/file/upload", upload.single('file'), (req, res) => {
 
 router.get('/', (req, res) => {
   res.send({
-    message: 'Welcome to my Express node app!..Thank you This is my first deploy api on AWS'
+    message: 'Welcome to my Express node app!.This is my first deploy api on AWS THANK YOU!'
   })
 })
 
