@@ -28,20 +28,19 @@ allProfile=async(req,res)=>{
 
 getProfileById=async(req,res)=>{
     const id=req.params
-
-    console.log('kkkk')
     try{
         // console.log(id)
         const user=await profile.findOne({_id:req.params.id})
         res.send({
             status:200,
+            message:'User Details',
             user
         })
-        console.log(user)
+        // console.log(user)
     }catch(err){
         res.send({        
         status:404,
-        // message:'Data Not Found!',
+        message:'Data Not Found!',
         error:err})
     }
 }

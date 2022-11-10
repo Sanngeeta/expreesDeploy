@@ -5,6 +5,14 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | b
 . ~/.nvm/nvm.sh
 nvm install node
 
+# Install forever:
+npm install forever -g
+
+
+
+# install pm2 module globaly
+npm install -g pm2
+pm2 update
 
 #create our working directory if it doesnt exist.
 DIR="/home/ec2-user/express-app"
