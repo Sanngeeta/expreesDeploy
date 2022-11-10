@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 
 #install node modules
 npm install
-# pm2 start npm --name "express-app" 
+# pm2 start npm --name "express-app." 
 
 #!/bin/bash
 cd /home/ec2-user/express-app/app.js-Test
