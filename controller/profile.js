@@ -27,14 +27,17 @@ allProfile=async(req,res)=>{
 
 
 getProfileById=async(req,res)=>{
+    const id=req.params
+
     console.log('kkkk')
     try{
-        const id=req.params._id
-        const profiles=await profile.findOne({id:req.params._id})
+        // console.log(id)
+        const user=await profile.findOne({_id:req.params.id})
         res.send({
             status:200,
-            user:profiles
+            user
         })
+        console.log(user)
     }catch(err){
         res.send({        
         status:404,
