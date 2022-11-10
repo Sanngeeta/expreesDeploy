@@ -26,6 +26,24 @@ allProfile=async(req,res)=>{
 
 
 
+getProfileById=async(req,res)=>{
+    console.log('kkkk')
+    try{
+        const id=req.params._id
+        const profiles=await profile.findOne({id:req.params._id})
+        res.send({
+            status:200,
+            user:profiles
+        })
+    }catch(err){
+        res.send({        
+        // status:404,
+        // message:'Data Not Found!',
+        error:err})
+    }
+}
+
+
 
 
 
@@ -147,7 +165,7 @@ profileLogin=(req,res)=>{
 
 
 
-module.exports={profileLogin,allProfile,profileSignup,}
+module.exports={profileLogin,allProfile,profileSignup,getProfileById}
 
 
 

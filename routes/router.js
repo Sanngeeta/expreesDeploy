@@ -4,6 +4,7 @@ const {
   profileLogin,
   allProfile,
   profileSignup,
+  getProfileById,
 } = require("../controller/profile");
 const Auth = require("../authentication/auth-jwt");
 
@@ -18,8 +19,7 @@ router.post("/profile/create", profileSignup);
 router.post("/profile/login", profileLogin);
 router.get("/profile/all", allProfile);
 
-
-
+router.get('/profile/details/:id',getProfileById)
 
 
 
@@ -74,7 +74,7 @@ router.post("/file/upload", upload.single('file'), (req, res) => {
 
 router.get('/', (req, res) => {
   res.send({
-    message: 'Welcome to my Express node app!..`'
+    message: 'Welcome to my Express node app!..'
   })
 })
 
