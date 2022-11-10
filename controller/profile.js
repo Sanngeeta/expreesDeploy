@@ -37,7 +37,7 @@ getProfileById=async(req,res)=>{
         })
     }catch(err){
         res.send({        
-        // status:404,
+        status:404,
         // message:'Data Not Found!',
         error:err})
     }
