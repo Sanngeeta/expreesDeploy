@@ -75,3 +75,13 @@ qr.toDataURL(strData, function (err, code) {
 
 //AKIA3UUJRZF7OBIOYL7Z
 //oqpYUmB3U4ssoQEC0PRQeMC5U2LYfzgGpcSBmwLq
+
+
+
+// git push https://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/BackendDelpoyRepo --all
+
+// BackendTeam-at-756945977684
+//qauqs8jahTclTG06HZtx47I2Jthpd9yInfohGKzoyvk=
+
+// git push https://git-codecommit.us-east-1.amazonaws.com/v1/repos/ExpressDeployRepo --all
+
