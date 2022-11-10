@@ -14,10 +14,23 @@ pm2 update
 
 
 
-# # delete existing bundle
-# cd /home/ec2-user/express-app
-# rm -rf node
+#!/bin/bash
+# cd /home/ec2-user/express-app/app.js
+# sudo pkill -f PM2
+# sudo pm2 start /home/ec2-user/express-app/app.js 
+# sudo pm2 startup
+# sudo pm2 save
 
+
+
+
+# delete existing bundle
+cd /home/ec2-user/express-app
+rm -rf node
+pkill -f PM2
+pm2 start /home/ec2-user/express-app/app.js 
+pm2 startup
+pm2 save
 
 #create our working directory if it doesnt exist.
 DIR="/home/ec2-user/express-app"
