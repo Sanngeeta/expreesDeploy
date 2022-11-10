@@ -6,9 +6,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | b
 nvm install node
 
 
-# install pm2 module globaly
-npm install -g pm2
-pm2 update
+# # install pm2 module globaly
+# npm install -g pm2
+# pm2 update
 
 
 
