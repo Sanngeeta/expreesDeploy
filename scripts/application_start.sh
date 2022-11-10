@@ -16,5 +16,5 @@ npm install
 # pm2 start npm --name "express-app." 
 
 #start our node app in the background
-npm start > app.out.log 2> app.err.log < /dev/null & 
+node app.js > app.out.log 2> app.err.log < /dev/null & 
 # pm2 restart nodejs-express-app >> /home/ec2-user/express-app-pipline/deploy.log ....
