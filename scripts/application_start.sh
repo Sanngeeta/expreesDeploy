@@ -18,7 +18,7 @@ npm install
 #!/bin/bash
 cd /home/ec2-user/express-app/app.js
 sudo pkill -f PM2
-sudo pm2 start /home/ec2-user/express-app/app.js
+sudo pm2 start /home/ec2-user/express-app/node app.js 
 sudo pm2 startup
 sudo pm2 save
 
