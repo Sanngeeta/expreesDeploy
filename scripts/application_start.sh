@@ -15,10 +15,13 @@ export NVM_DIR="$HOME/.nvm"
 npm install
 # pm2 start npm --name "express-app" 
 
-# pm2 start   ecosystem.config.js --only express-app
-
+#!/bin/bash
+cd /home/ec2-user/express-app/app.js-Test
+sudo pkill -f PM2
+sudo pm2 start /home/ec2-user/express-app
+sudo pm2 startup
+sudo pm2 save
 
 #start our node app in the background
-
-pm2 start   ecosystem.config.js --only express-app > app.out.log 2> app.err.log < /dev/null & 
+node app.js > app.out.log 2> app.err.log < /dev/null & 
 # pm2 restart nodejs-express-app >> /home/ec2-user/express-app-pipline/deploy.log ....
