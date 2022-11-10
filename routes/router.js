@@ -74,7 +74,7 @@ router.post("/file/upload", upload.single('file'), (req, res) => {
 
 router.get('/', (req, res) => {
   res.send({
-    message: 'welcome to my page'
+    message: 'Welcome to my Express node app!'
   })
 })
 
